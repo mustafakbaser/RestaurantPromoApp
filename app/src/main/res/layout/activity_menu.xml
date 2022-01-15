@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/beer_imageview"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="icecek_bira"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cocktail_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/fish_imageview"
+        app:srcCompat="@drawable/imagebeer" />
+
+    <ImageView
+        android:id="@+id/cocktail_imageview"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="-2dp"
+        app:layout_constraintEnd_toStartOf="@+id/beer_imageview"
+        android:onClick="icecek_kokteyl"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_imageview"
+        app:srcCompat="@drawable/imagecocktail" />
+
+    <ImageView
+        android:id="@+id/fish_imageview"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="150dp"
+        android:onClick="yiyecek_balik"
+        app:layout_constraintEnd_toStartOf="@+id/salad_imageview"
+        app:layout_constraintStart_toEndOf="@+id/food_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/menuText"
+        app:srcCompat="@drawable/imagefish" />
+
+    <ImageView
+        android:id="@+id/salad_imageview"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="yiyecek_salata"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fish_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/menuText"
+        app:srcCompat="@drawable/imagesalad" />
+
+    <ImageView
+        android:id="@+id/food_imageview"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="151dp"
+        android:onClick="yiyecek_et"
+        app:layout_constraintEnd_toStartOf="@+id/fish_imageview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuText"
+        app:srcCompat="@drawable/imagemeat" />
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="146dp"
+        android:drawableLeft="@drawable/ic_wine_bottle"
+        android:fontFamily="monospace"
+        android:text="@string/MainActivity_Menu"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginEnd="3dp"
+        android:onClick="icecek_sarap"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/imagewine" />
+
+    <TextView
+        android:id="@+id/sefinSpesyaliTextView"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toEndOf="@+id/imageView7"
+        android:background="@drawable/custom_button2"
+        android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+        android:fontFamily="monospace"
+        android:onClick="sefin_spesyali_tabbed"
+        android:padding="10dp"
+        android:text="@string/Menu_Sefin_Spesyali"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

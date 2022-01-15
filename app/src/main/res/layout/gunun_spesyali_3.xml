@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gunun_spesyali_3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:screenOrientation="portrait"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sefin_Spesyali_Title_3"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:padding="20dp"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sefin_Spesyali_Body_3"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sefin_Spesyali_Detail_3"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

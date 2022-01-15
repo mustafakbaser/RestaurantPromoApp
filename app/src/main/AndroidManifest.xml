@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mustafabaser.resto">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mustafabaser.resto.Icecek_Sarap" />
+        <activity android:name="com.mustafabaser.resto.Icecek_Bira" />
+        <activity android:name="com.mustafabaser.resto.Icecek_Kokteyl" />
+        <activity android:name="com.mustafabaser.resto.Yiyecek_Salata" />
+        <activity android:name="com.mustafabaser.resto.Yiyecek_Balik" />
+        <activity android:name="com.mustafabaser.resto.Yiyecek_Et" />
+        <activity android:name="com.mustafabaser.resto.Rezervasyon2" />
+
+        <provider
+            android:name="com.mustafabaser.resto.ContentProvider"
+            android:authorities="com.mustafabaser.resto.ContentProvider" />
+
+        <activity android:name="com.mustafabaser.resto.Rezervasyon" />
+        <activity android:name="com.mustafabaser.resto.Menu" />
+        <activity
+            android:name="com.mustafabaser.resto.fragments.SefinSpesyaliTabbed"
+            android:label="@string/title_activity_sefin_spesyali_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.mustafabaser.resto.Hakkimizda" />
+        <activity android:name="com.mustafabaser.resto.Sefin_Spesyali" />
+        <activity android:name="com.mustafabaser.resto.Tavsiye" />
+        <activity
+            android:name="com.mustafabaser.resto.Splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mustafabaser.resto.MainActivity" />
+
+        <service
+            android:name="com.mustafabaser.resto.HelloService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
