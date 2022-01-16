@@ -24,20 +24,20 @@ public class Yiyecek_Et extends AppCompatActivity {
         setTitle(getString(R.string.menu_et));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Backbutton
 
-        ArrayList<ExampleItem> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Fırın Antrikot", "Etlerin üzerine 2-3 adet defne yaprağı koyulur ve önceden ısıtılmış 200° fırında, 35-40 dakika pişirilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Hünkar Beğendi", "Patates püresi, kuşkonmaz ve pancar turşusu ile dekore edilir"));
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Macar Gulaş", "Buğulanmış pastırma köfte veya haşlanmış kalın hamur parçalarıyla servis yapılır."));
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Dana Madalyon", "Patates püresi, kuşkonmaz ve pancar turşusu ile dekore edilir"));
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Dana Külbastı", "Etlerin üzerine 2-3 adet defne yaprağı koyulur ve önceden ısıtılmış 200° fırında, 35-40 dakika pişirilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Biberli Biftek", "Buğulanmış pastırma köfte veya haşlanmış kalın hamur parçalarıyla servis yapılır."));
-        exampleList.add(new ExampleItem(R.drawable.ic_cook, "Mantar Soslu Bonfile", "Etlerin üzerine 2-3 adet defne yaprağı koyulur ve önceden ısıtılmış 200° fırında, 35-40 dakika pişirilir."));
+        ArrayList<ExampleItem> meatMenu = new ArrayList<>();
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Fırın Antrikot", "Etlerin üzerine 2-3 adet defne yaprağı koyulur ve önceden ısıtılmış 200° fırında, 35-40 dakika pişirilir."));
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Hünkar Beğendi", "Patates püresi, kuşkonmaz ve pancar turşusu ile dekore edilir"));
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Macar Gulaş", "Buğulanmış pastırma köfte veya haşlanmış kalın hamur parçalarıyla servis yapılır."));
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Dana Madalyon", "Patates püresi, kuşkonmaz ve pancar turşusu ile dekore edilir"));
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Dana Külbastı", "Etlerin üzerine 2-3 adet defne yaprağı koyulur ve önceden ısıtılmış 200° fırında, 35-40 dakika pişirilir."));
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Biberli Biftek", "Buğulanmış pastırma köfte veya haşlanmış kalın hamur parçalarıyla servis yapılır."));
+        meatMenu.add(new ExampleItem(R.drawable.ic_cook, "Mantar Soslu Bonfile", "Etlerin üzerine 2-3 adet defne yaprağı koyulur ve önceden ısıtılmış 200° fırında, 35-40 dakika pişirilir."));
 
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new ExampleAdapter(exampleList);
+        mAdapter = new ExampleAdapter(meatMenu);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
     }

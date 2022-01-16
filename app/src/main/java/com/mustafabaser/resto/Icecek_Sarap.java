@@ -24,17 +24,17 @@ public class Icecek_Sarap extends AppCompatActivity {
         setTitle(getString(R.string.menu_sarap));
 
 
-        ArrayList<ExampleItem> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Kırmızı Şarap", "Özel peynir tabağı ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Roze Şarap", "Özel peynir tabağı ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Beyaz Şarap", "Özel peynir tabağı ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Sparkling Şarap", "Özel peynir tabağı ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Dessert Şarap", "Özel peynir tabağı ile servis edilir."));
+        ArrayList<ExampleItem> wineList = new ArrayList<>();
+        wineList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Kırmızı Şarap", "Özel peynir tabağı ile servis edilir."));
+        wineList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Roze Şarap", "Özel peynir tabağı ile servis edilir."));
+        wineList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Beyaz Şarap", "Özel peynir tabağı ile servis edilir."));
+        wineList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Sparkling Şarap", "Özel peynir tabağı ile servis edilir."));
+        wineList.add(new ExampleItem(R.drawable.ic_wine_bottle, "Dessert Şarap", "Özel peynir tabağı ile servis edilir."));
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new ExampleAdapter(exampleList);
+        mAdapter = new ExampleAdapter(wineList);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
     }

@@ -26,18 +26,18 @@ public class Icecek_Bira extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Backbutton
 
 
-        ArrayList<ExampleItem> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.ic_beer, "Lager", "Daha düşük sıcaklıklarda (7-16 °C) ve hazırlanan şıranın alt kısmında aktif olan bir maya çeşididir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_beer, "Ale", "Nispeten daha yüksek sıcaklıklarda (15-25 °C) ve hazırlanan şıranın üst kısmında aktif olan bir maya çeşididir. "));
-        exampleList.add(new ExampleItem(R.drawable.ic_beer, "Lambic ve Funky", "Funky mayalanma türü, lambic olarak başlayan fermantasyona diğer mayaların (ale veya lager) eklenmesi ile üretilmektedir. "));
-        exampleList.add(new ExampleItem(R.drawable.ic_beer, "Pale Malt", "İngiliz Pale Ale ve Indian Pale Ale (IPA) tipi biralarda kullanılır. Kısa süreli, nispeten düşük sıcaklıklarda fırınlanmış malttır."));
-        exampleList.add(new ExampleItem(R.drawable.ic_beer, "Amber Malt", "Pale Malt'ın biraz daha kavrulmuşudur. Acı bir aroma verir. Brown Porter tipi biraların hammaddesidir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_beer, "Black Malt", "Arpa maltının 200 °C'de fırınlanması ile (yakılarak) elde edilir. Küllü tadı ile biralara renk ve aroma katar."));
+        ArrayList<ExampleItem> beerList = new ArrayList<>();
+        beerList.add(new ExampleItem(R.drawable.ic_beer, "Lager", "Daha düşük sıcaklıklarda (7-16 °C) ve hazırlanan şıranın alt kısmında aktif olan bir maya çeşididir."));
+        beerList.add(new ExampleItem(R.drawable.ic_beer, "Ale", "Nispeten daha yüksek sıcaklıklarda (15-25 °C) ve hazırlanan şıranın üst kısmında aktif olan bir maya çeşididir. "));
+        beerList.add(new ExampleItem(R.drawable.ic_beer, "Lambic ve Funky", "Funky mayalanma türü, lambic olarak başlayan fermantasyona diğer mayaların (ale veya lager) eklenmesi ile üretilmektedir. "));
+        beerList.add(new ExampleItem(R.drawable.ic_beer, "Pale Malt", "İngiliz Pale Ale ve Indian Pale Ale (IPA) tipi biralarda kullanılır. Kısa süreli, nispeten düşük sıcaklıklarda fırınlanmış malttır."));
+        beerList.add(new ExampleItem(R.drawable.ic_beer, "Amber Malt", "Pale Malt'ın biraz daha kavrulmuşudur. Acı bir aroma verir. Brown Porter tipi biraların hammaddesidir."));
+        beerList.add(new ExampleItem(R.drawable.ic_beer, "Black Malt", "Arpa maltının 200 °C'de fırınlanması ile (yakılarak) elde edilir. Küllü tadı ile biralara renk ve aroma katar."));
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new ExampleAdapter(exampleList);
+        mAdapter = new ExampleAdapter(beerList);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
     }

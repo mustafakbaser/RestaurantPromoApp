@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.action_bar_layout);
 
-        //service çağırı
+        //service çağırır
         Intent intent = new Intent(this, HelloService.class);
         //startService(intent);
         ContextCompat.startForegroundService(getApplicationContext(), intent);

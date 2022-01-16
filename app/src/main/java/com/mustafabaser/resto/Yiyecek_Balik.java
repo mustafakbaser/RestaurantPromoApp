@@ -26,19 +26,19 @@ public class Yiyecek_Balik extends AppCompatActivity {
 
 
 
-        ArrayList<ExampleItem> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.ic_fish, "Lüfer", "Deniz börülcesi ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_fish, "Tekir", "Deniz börülcesi ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_fish, "Karagöz", "Deniz börülcesi ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_fish, "Palamut", "Deniz börülcesi ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_shrimp, "Jumbo Karides", "Deniz börülcesi ile servis edilir."));
-        exampleList.add(new ExampleItem(R.drawable.ic_shrimp, "Istakoz", "Deniz börülcesi ile servis edilir."));
+        ArrayList<ExampleItem> fishMenu = new ArrayList<>();
+        fishMenu.add(new ExampleItem(R.drawable.ic_fish, "Lüfer", "Deniz börülcesi ile servis edilir."));
+        fishMenu.add(new ExampleItem(R.drawable.ic_fish, "Tekir", "Deniz börülcesi ile servis edilir."));
+        fishMenu.add(new ExampleItem(R.drawable.ic_fish, "Karagöz", "Deniz börülcesi ile servis edilir."));
+        fishMenu.add(new ExampleItem(R.drawable.ic_fish, "Palamut", "Deniz börülcesi ile servis edilir."));
+        fishMenu.add(new ExampleItem(R.drawable.ic_shrimp, "Jumbo Karides", "Deniz börülcesi ile servis edilir."));
+        fishMenu.add(new ExampleItem(R.drawable.ic_shrimp, "Istakoz", "Deniz börülcesi ile servis edilir."));
 
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new ExampleAdapter(exampleList);
+        mAdapter = new ExampleAdapter(fishMenu);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
     }
