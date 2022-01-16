@@ -15,7 +15,6 @@ public class ExampleItem {
         return mImageResource;
     }
 
-
     public String getText1(){
         return mText1;
     }
